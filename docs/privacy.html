@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Smile Code 隐私政策。">
+  <meta name="theme-color" content="#0a0b0d">
+  <title>隐私政策｜Smile Code</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Smile Code 首页">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span>Smile Code</span>
+    </a>
+    <nav aria-label="主要导航">
+      <a href="./">首页</a>
+      <a aria-current="page" href="./privacy.html">隐私</a>
+      <a href="./support.html">支持</a>
+    </nav>
+  </header>
+
+  <main class="document shell">
+    <div class="document-heading">
+      <span class="eyebrow">Privacy Policy</span>
+      <h1>Smile Code 隐私政策</h1>
+      <p>更新日期：2026 年 9 月 7 日。本政策说明 Smile Code 1.0 的数据处理方式。</p>
+    </div>
+
+    <div class="document-layout">
+      <aside class="document-summary">
+        <strong>隐私摘要</strong>
+        <ul>
+          <li>不运营 Smile Code 云端中转服务器</li>
+          <li>不投放广告</li>
+          <li>不进行跨 App 追踪</li>
+          <li>主要数据在 iPhone 与 Mac 之间传输</li>
+          <li>发送给 AI 工具的内容适用其服务条款</li>
+          <li>可选 AI 保真纠错仅在用户配置并启用后调用所选服务商</li>
+        </ul>
+      </aside>
+
+      <article class="document-content">
+        <section>
+          <h2>1. 适用范围</h2>
+          <p>本隐私政策适用于 Smile Code iPhone 应用、Smile Code Mac 配套应用及本网站。Smile Code 是一款连接用户自有 iPhone 与 Mac 的控制工具，用于查看会话、输入内容和执行用户主动选择的操作。</p>
+        </section>
+
+        <section>
+          <h2>2. Smile Code 处理的信息</h2>
+          <h3>设备配对与连接信息</h3>
+          <p>为连接用户的 iPhone 与 Mac，应用会在设备本地保存配对码、设备标识、服务名称、连接状态和用户偏好。这些信息用于发现已配对的 Mac、恢复连接和同步控制设置。</p>
+
+          <h3>用户输入和会话内容</h3>
+          <p>当用户主动使用文字、语音转写或控制操作时，相关文本、命令和会话数据会通过用户的局域网在 iPhone 与 Mac 之间传输。Smile Code 不运营用于中转或读取这些内容的开发者云端服务器。</p>
+
+          <h3>语音数据</h3>
+          <p>系统识别模式需要麦克风和语音识别权限，使用 Apple Speech 把录音转换为文字；是否由 Apple 在线处理取决于系统、语言和服务状态。Apple 的处理适用其隐私政策和系统设置。Smile Code 不向开发者服务器上传原始录音。</p>
+          <p>用户可以另行下载本地语音模型并选择离线识别。此模式仅需麦克风权限，通过 sherpa-onnx 和 ONNX Runtime 在 iPhone 上处理录音，不调用 Apple Speech 或 AI 润色服务。模型从 ModelScope 下载，下载站会接收建立网络连接所需的信息（例如 IP 地址）；模型文件校验后保存于设备，并排除在系统备份之外。模型缺失时不会自动下载或悄悄切换识别服务。</p>
+
+          <h3>可选 AI 保真纠错</h3>
+          <p>AI 润色默认关闭。用户自行配置兼容的 HTTPS 服务地址、模型和 API Key 并开启后，iPhone 会把本次录音的转写文字、个人词汇和选中的词汇包内容直接发给所选服务商。不发送原始录音、会话历史或输入框里原有的草稿，也不经过 Smile Code 开发者服务器。服务商（包括用户选择的 MiMo、DeepSeek 或其他兼容服务）可能按其政策处理或保留内容，并向用户收费。结果仍需用户检查、编辑并主动发送。</p>
+          <p>“保存并测试”会向所填服务地址发起测试请求；刷新模型列表也会携带所填凭据联系该服务商。此类主动测试与实际语音润色的开关分开。用户可以关闭 AI 润色，并清空 API Key 后保存以删除配置中的密钥。</p>
+          <p>API Key 保存在用户设备的 Keychain。通过包含安全密钥的二维码建立配对后，iPhone 与 Mac 可以同步语音配置和密钥；该配置载荷使用 AES-GCM 加密，配对共享密钥保存在 Keychain。仅有短授权码的旧配对需要重新扫码。同步删除需要对方设备重新连接并接收更新，不能保证立即清除离线设备上的副本。</p>
+
+          <h3>通知</h3>
+          <p>你可以选择任务完成、授权或回答提醒。提醒需应用保持连接；后台或锁屏时可能无法送达。当前不使用远程推送，也不上传推送令牌。</p>
+
+          <h3>本地诊断信息</h3>
+          <p>应用可能在用户设备本地显示连接状态和错误信息，以便排查问题。当前版本不集成第三方广告、用户行为分析或崩溃统计 SDK，也不会把这些信息自动上传给 Smile Code 开发者。</p>
+        </section>
+
+        <section>
+          <h2>3. 系统权限</h2>
+          <ul>
+            <li><strong>本地网络：</strong>发现并连接同一 Wi-Fi 上运行 Smile Code 的 Mac，用于首次配对以及后续传输会话、控制指令和实时预览。</li>
+            <li><strong>相机：</strong>扫描 Smile Code Mac 显示的配对二维码。</li>
+            <li><strong>麦克风：</strong>采集用户主动发起的语音输入。</li>
+            <li><strong>语音识别：</strong>把语音转换为可编辑文字。</li>
+            <li><strong>通知：</strong>显示用户选择的事件提醒；关闭不会妨碍会话功能。</li>
+            <li><strong>Mac 辅助功能：</strong>仅在用户启用相关控制能力时执行其主动请求的操作。</li>
+            <li><strong>Mac 屏幕录制：</strong>仅在用户启用桌面预览功能时读取相应画面。</li>
+          </ul>
+          <p>用户可以在 iPhone 或 Mac 的系统设置中随时撤销这些权限；撤销后，相应功能可能无法继续使用。</p>
+        </section>
+
+        <section>
+          <h2>4. 第三方 AI 工具</h2>
+          <p>Smile Code 可以把用户确认发送的内容交给用户在 Mac 上选择和授权的第三方 AI 工具，例如 Codex 或 Cursor。相关服务可能根据用户账号、服务设置和各自隐私政策处理或保存内容。Smile Code 不代表这些服务，也无法控制其数据保留方式。</p>
+          <p>如用户启用 AI 润色，本次转写及所选词汇会由 iPhone 直接发送给用户配置的兼容服务商。该服务独立于 Mac 上的 AI 工具，其数据处理、保留和费用适用所选服务商的政策与账号设置。部分服务可能位于用户所在国家或地区之外；请在配置前确认可接受该服务的处理地点及条款。</p>
+          <p>用户应在使用前查看相应第三方服务的隐私政策、数据控制选项和企业管理设置。</p>
+        </section>
+
+        <section>
+          <h2>5. 信息共享与出售</h2>
+          <p>Smile Code 不出售个人信息，不将信息用于定向广告，也不进行跨网站或跨 App 追踪。语音及会话内容按上述说明交由用户选择的系统服务、Agent 或纠错服务处理。</p>
+          <p>本网站和安装包由 GitHub 提供托管服务。访问网页或下载文件时，GitHub 可能处理 IP 地址、浏览器及请求信息，适用其 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">隐私声明</a>。网站未添加广告、第三方统计脚本或追踪 Cookie。</p>
+          <p>通过 GitHub 工单提交的内容和账号资料可能公开显示，由 GitHub 按其规则保存。请只提供排查所需的最少信息，并隐藏私人内容；需要删除工单信息时，可使用 GitHub 提供的编辑、删除或支持渠道。</p>
+        </section>
+
+        <section>
+          <h2>6. 数据保存与删除</h2>
+          <p>配对状态、偏好、词库及本地缓存主要保存在用户设备。用户可编辑或删除词汇、管理会话、移除本地模型，并清空 API Key 后保存。卸载应用不保证清除 Keychain 项目，也不清除另一台设备或第三方服务中的数据。解除配对不会自动删除第三方会话；会话删除是否作用于第三方服务取决于对应工具的能力与执行结果。</p>
+        </section>
+
+        <section>
+          <h2>7. 安全</h2>
+          <p>Smile Code 使用扫码建立的共享密钥验证设备，并通过 TLS 加密会话、控制指令和视频传输；语音配置载荷另行使用 AES-GCM 加密。两端需要使用兼容版本，首次连接不能仅凭短授权码完成。请勿向他人展示配对二维码，也不要将连接端口暴露至互联网。</p>
+          <p>传输加密不等于设备本地数据或第三方服务也受到相同保护。配对密钥泄露可能影响以往传输的保密性；怀疑泄露时，请在 Mac 上更新配对码并重新扫码。此操作会断开旧连接。</p>
+        </section>
+
+        <section>
+          <h2>8. 儿童隐私</h2>
+          <p>Smile Code 面向开发与生产力场景，不以儿童为目标用户，也不会明知故意收集儿童个人信息。</p>
+        </section>
+
+        <section>
+          <h2>9. 政策变更</h2>
+          <p>如果产品能力或数据处理方式发生重大变化，我们会更新本页面的生效日期，并在适当情况下通过应用或发布说明告知用户。</p>
+        </section>
+
+        <section>
+          <h2>10. 联系我们</h2>
+          <p>如对本隐私政策或数据处理方式有疑问，请通过 <a href="https://github.com/TanHuoo/SmileVibe/issues/new">GitHub 支持工单</a> 联系开发者。提交工单时请勿公开粘贴配对码、账号凭据、完整私人会话或其他敏感信息。</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer shell compact-footer">
+    <div class="footer-links">
+      <a href="./">产品介绍</a>
+      <a href="./support.html">支持中心</a>
+      <a href="https://github.com/TanHuoo/SmileVibe">GitHub</a>
+    </div>
+    <p class="copyright">© 2026 Smile Code. All rights reserved.</p>
+  </footer>
+</body>
+</html>
