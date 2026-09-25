@@ -1,13 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><!-- sparkle-sign-warning:
+<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
 IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
 --><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
-  <channel>
-    <title>Smile Code Mac 更新</title>
-    <link>https://tanhuoo.github.io/SmileVibe/</link>
-    <description>Smile Code Mac 正式版更新。通过发布验证后才会加入可安装的新版本。</description>
-    <language>zh-cn</language>
-  </channel>
+    <channel>
+        <title>Smile Code Mac</title>
+        <item>
+            <title>1.0.3</title>
+            <pubDate>Fri, 25 Sep 2026 14:43:23 +0800</pubDate>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[Smile Code Mac 1.0.3 (23) supports encrypted Agent conversations with a paired iPhone across different networks. Keep the Mac awake, online, and running Smile Code Mac. Both devices must be updated to 1.0.3 or later. Desktop preview remains available only when both devices are on the same local network.
+
+Universal app for Apple silicon and Intel Macs, macOS 14 or later. Signed with Developer ID and notarized by Apple.
+
+SHA-256 (DMG): `34759ffd5148f478d3ee859e936fde1db8b332ba2af2268f2c7e4841eb73f377`
+]]></description>
+            <enclosure url="https://github.com/TanHuoo/SmileVibe/releases/download/mac-v1.0.3-build.23-20260925/Smile-Code-Mac-1.0.3-23.zip" length="27354715" type="application/octet-stream" sparkle:edSignature="+Ivc3Q7upPzGTjRaaDA8xheJULQ/osb68TCBFv41FZzMvZwHwRusE5VmHCUSVG7wSbrJZXTgnmyzVWWo5+cxDQ=="></enclosure>
+        </item>
+    </channel>
 </rss><!-- sparkle-signatures:
-edSignature: CBN95yaCSQ/4NJpfI8p7UaPNWPnNe1IVpjnRqDWK0B9ZqHDnjgeBMF9NCaY4ndA1cYLEWWN2DKOEf3i94fXcAw==
-length: 658
+edSignature: 4KmR2bt4ZnLgj+nxgiuNH0hTVzDWF4T+pz6ux9162x9omWFK6VXOGKp0g5Qw/7ZhmQewjZ/jhlN+KP1xNb5PBw==
+length: 1665
 -->
